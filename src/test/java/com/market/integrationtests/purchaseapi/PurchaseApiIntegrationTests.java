@@ -1,4 +1,4 @@
-package com.market.integrationtests;
+package com.market.integrationtests.purchaseapi;
 
 import org.junit.Before;
 import org.junit.Test;
