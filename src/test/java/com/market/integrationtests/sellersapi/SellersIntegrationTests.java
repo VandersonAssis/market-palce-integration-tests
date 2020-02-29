@@ -1,4 +1,4 @@
-package com.market.integrationtests.productsapi;
+package com.market.integrationtests.sellersapi;
 
 import org.junit.Before;
 import org.junit.FixMethodOrder;

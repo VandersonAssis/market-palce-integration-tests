@@ -19,6 +19,7 @@
         <rest-assured.version>4.2.0</rest-assured.version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
         <gson.version>2.8.6</gson.version>
+        <json-assert.version>1.5.0</json-assert.version>
     </properties>
 
     <dependencies>
@@ -49,6 +50,13 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>${gson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
+            <version>${json-assert.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
