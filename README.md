@@ -10,7 +10,6 @@ This project has all the integration tests for the Market Place system.
 - Netflix Ribbon (Client side load balancing)
 - Netflix Eureka
 - Swagger (API documentation and code generation)
-- Lombok
 - Spring Boot
 - Spring Cloud Config Server (Centralized configuration files of the microservices)
 - Spring Cloud Sleuth
@@ -18,12 +17,13 @@ This project has all the integration tests for the Market Place system.
 - Sonar (Helps on identifying code smells, test coverage and some more...)
 - Jacoco (Allows to integrate our tests results in the sonar web app)
 - Rest Assured (Api integration tests)
+- Json Assert (Used to validate the returned Json with Regex)
 - JUnit
 - Mockito
 - Gson
 - Maven
 
-### Deploy
+### Deploy (docker compose is outdated, please don't try to deploy the system just yet)
 To deploy this project please follow bellow steps.
 - 1 Have Docker configured in your computer.
 - 2 Clone this repository https://github.com/VandersonAssis/market-place-docker-compose
