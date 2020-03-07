@@ -115,8 +115,7 @@ public class ProductsFluxIntegrationTests {
 
     @Test
     public void f_WhenGetProductsByNonExistentSeller_ThenNotFound() {
-        given()
-            .contentType("application/json")
+        given().contentType("application/json")
             .when()
             .request("GET", url + "/invalidid/seller")
             .then()

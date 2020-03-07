@@ -11,7 +11,7 @@ public abstract class TestDataInitializer {
     public static String postTestSeller(String host) {
         String sellerUrl = host + "/market-place-sellers/marketplace/api/v1/sellers";
 
-        sellerId = with().body(validSellerJson())
+        sellerId = with().body(validSellerJson(null))
                 .given().contentType("application/json")
                 .when()
                 .request("POST", sellerUrl)
@@ -25,7 +25,7 @@ public abstract class TestDataInitializer {
     public static void deleteTestSeller(String host) {
         String sellerUrl = host + "/market-place-sellers/marketplace/api/v1/sellers";
 
-        with().body(validSellerJson())
+        with().body(validSellerJson(null))
                 .given().contentType("application/json").when()
                 .request("DELETE", sellerUrl + "/" + sellerId);
     }

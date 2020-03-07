@@ -20,10 +20,18 @@ public abstract class TestData {
                 "}";
     }
 
-    public static String validSellerJson() {
+    public static String validSellerJson(String sellerId) {
         return "{\n" +
+                "\"id\": \"" + sellerId + "\",\n" +
                 "  \"name\": \"Test seller\",\n" +
                 "  \"cnae\": 5\n" +
+                "}";
+    }
+
+    public static String invalidSellerJson() {
+        return "{\n" +
+                "  \"name\": \"Test seller\",\n" +
+                "  \"invalidProperty\": 5\n" +
                 "}";
     }
 
