@@ -173,7 +173,7 @@ public class LocksFluxIntegrationTests {
                 .when()
                 .request("DELETE", url + "/" + lockId + "/lock")
                 .then()
-                .statusCode(OK.value());
+                .statusCode(NO_CONTENT.value());
     }
 
     @Test
@@ -182,6 +182,6 @@ public class LocksFluxIntegrationTests {
                 .when()
                 .request("DELETE", url + "/test_lock_id/lock")
                 .then()
-                .statusCode(OK.value());
+                .statusCode(NO_CONTENT.value());
     }
 }
